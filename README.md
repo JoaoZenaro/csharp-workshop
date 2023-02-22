@@ -1,6 +1,6 @@
 # C# Workshop
 
-Page: 69
+Page: 73
 
 ```
 dotnet new
