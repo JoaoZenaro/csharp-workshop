@@ -1,11 +1,9 @@
 # C# Workshop
 
-Page: 73
+Page: 78
 
 ```
 dotnet new
 dotnet build
 dotnet run
 ```
-
-edit
