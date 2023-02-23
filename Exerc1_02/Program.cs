@@ -2,4 +2,3 @@
 var name = Console.ReadLine();
 
 Console.WriteLine($"Hey, {name}!");
-Console.Read();

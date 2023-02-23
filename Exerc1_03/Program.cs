@@ -15,5 +15,3 @@ Console.WriteLine(greeting);
 var anotherGreeting = "Hello Earth";
 
 Console.WriteLine(FormatReturningString(anotherGreeting));
-
-Console.Read();

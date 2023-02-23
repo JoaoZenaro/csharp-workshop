@@ -9,5 +9,3 @@ Console.WriteLine($"Sum: {a + b}");
 Console.WriteLine($"Mul: {a * b}");
 Console.WriteLine($"Sub: {a - b}");
 Console.WriteLine($"Div: {a / b}");
-
-Console.Read();
