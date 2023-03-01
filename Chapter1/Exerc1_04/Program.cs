@@ -1,8 +1,8 @@
 ﻿Console.Write("Value for a: ");
-var a = int.Parse(Console.ReadLine());
+var a = Convert.ToInt32(Console.ReadLine());
 
 Console.Write("Value for b: ");
-var b = int.Parse(Console.ReadLine());
+var b = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine($"A is {a} and b is {b}");
 Console.WriteLine($"Sum: {a + b}");
