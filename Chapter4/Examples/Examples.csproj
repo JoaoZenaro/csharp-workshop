@@ -5,6 +5,11 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<!--<StartupObject>Chapter4.Examples.ListExamples</StartupObject>-->
+	<!--<StartupObject>Chapter4.Examples.QueueExamples</StartupObject>-->
+	<!--<StartupObject>Chapter4.Examples.StackExamples</StartupObject>-->
+	<!--<StartupObject>Chapter4.Examples.HashSetExamples</StartupObject>-->
+	<StartupObject>Chapter4.Examples.DictionaryExamples</StartupObject>
   </PropertyGroup>
 
 </Project>
