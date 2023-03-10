@@ -17,7 +17,9 @@
 	<!--<StartupObject>Chapter4.Examples.LinqThenByExamples</StartupObject>-->
 	<!--<StartupObject>Chapter4.Examples.LinqSkipTakeExamples</StartupObject>-->
 	<!--<StartupObject>Chapter4.Examples.LinqGroupByExamples</StartupObject>-->
-	<StartupObject>Chapter4.Examples.LinqAggregationExamples</StartupObject>
+	<!--<StartupObject>Chapter4.Examples.LinqAggregationExamples</StartupObject>-->
+	<!--<StartupObject>Chapter4.Examples.LinqAllAnyExamples</StartupObject>-->
+	<StartupObject>Chapter4.Examples.LinqJoinExamples</StartupObject>
   </PropertyGroup>
 
 </Project>
