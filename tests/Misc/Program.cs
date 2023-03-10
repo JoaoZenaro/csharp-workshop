@@ -8,3 +8,10 @@
 //{
 //    action();
 //}
+
+
+var letters = new List<string> { "a", "b" }
+var query = letters.Select(w => w.ToUpper());
+letters.Add("z");
+foreach (var l in query)
+    Console.Write(l);

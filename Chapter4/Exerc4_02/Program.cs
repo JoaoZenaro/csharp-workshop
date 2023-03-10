@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Chapter4.Exercises
+namespace Chapter4.Exercises.Exerc4_02
 {
-    static class Exerc4_02
+    static class WordCounter
     {
         public static IEnumerable<KeyValuePair<string, int>> Process(string phrase)
         {
@@ -40,7 +40,7 @@ namespace Chapter4.Exercises
             string input;
             do
             {
-                Console.Write("Enter a phrase:");
+                Console.Write("Enter a phrase: ");
                 input = Console.ReadLine();
 
                 if (!string.IsNullOrEmpty(input))
@@ -56,7 +56,9 @@ namespace Chapter4.Exercises
                             Console.WriteLine();
                         }
                     }
+                    Console.WriteLine();
                 }
+            } while (input != string.Empty);
         }
     }
 }

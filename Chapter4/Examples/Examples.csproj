@@ -9,7 +9,10 @@
 	<!--<StartupObject>Chapter4.Examples.QueueExamples</StartupObject>-->
 	<!--<StartupObject>Chapter4.Examples.StackExamples</StartupObject>-->
 	<!--<StartupObject>Chapter4.Examples.HashSetExamples</StartupObject>-->
-	<StartupObject>Chapter4.Examples.DictionaryExamples</StartupObject>
+	<!--<StartupObject>Chapter4.Examples.DictionaryExamples</StartupObject>-->
+	<!--<StartupObject>Chapter4.Examples.LinqSelectExamples</StartupObject>-->
+	<!--<StartupObject>Chapter4.Examples.LinqSelectManyExamples</StartupObject>-->
+	<StartupObject>Chapter4.Examples.LinqWhereExamples</StartupObject>
   </PropertyGroup>
 
 </Project>
