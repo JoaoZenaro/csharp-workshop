@@ -16,7 +16,8 @@
 	<!--<StartupObject>Chapter4.Examples.LinqOrderByExamples</StartupObject>-->
 	<!--<StartupObject>Chapter4.Examples.LinqThenByExamples</StartupObject>-->
 	<!--<StartupObject>Chapter4.Examples.LinqSkipTakeExamples</StartupObject>-->
-	<StartupObject>Chapter4.Examples.LinqGroupByExamples</StartupObject>
+	<!--<StartupObject>Chapter4.Examples.LinqGroupByExamples</StartupObject>-->
+	<StartupObject>Chapter4.Examples.LinqAggregationExamples</StartupObject>
   </PropertyGroup>
 
 </Project>
