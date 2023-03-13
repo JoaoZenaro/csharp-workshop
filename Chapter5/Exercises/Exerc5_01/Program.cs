@@ -20,7 +20,7 @@ namespace Chapter5.Exercises.Exerc5_01
             string input;
             do
             {
-                Console.Write("Enter number: ");
+                Console.WriteLine("Enter a number: ");
                 input = Console.ReadLine();
 
                 if (!string.IsNullOrEmpty(input) && int.TryParse(input, NumberStyles.Any, CultureInfo.CurrentCulture, out var number))

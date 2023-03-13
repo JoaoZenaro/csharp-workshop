@@ -6,8 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	<!--<StartupObject>Chapter5.Examples.TaskExamples</StartupObject>-->
+	<!--<StartupObject>Chapter5.Examples.TaskWaitAnyExamples</StartupObject>-->
 	  
-	<StartupObject>Chapter5.Exercises.Exerc5_01.Program</StartupObject>
+	<!--<StartupObject>Chapter5.Exercises.Exerc5_01.Program</StartupObject>-->
+	<StartupObject>Chapter5.Exercises.Exerc5_02.Program</StartupObject>
+	<!--<StartupObject>Chapter5.Exercises.Exerc5_03.Program</StartupObject>-->
+	<!--<StartupObject>Chapter5.Exercises.Exerc5_04.Program</StartupObject>-->
+	<!--<StartupObject>Chapter5.Exercises.Exerc5_05.Program</StartupObject>-->
   </PropertyGroup>
 
 </Project>
