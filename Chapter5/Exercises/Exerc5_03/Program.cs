@@ -10,6 +10,7 @@ namespace Chapter5.Exercises.Exerc5_03
     public record CarSale
     {
         public CarSale(string name, double salePrice) => (Name, SalePrice) = (name, salePrice);
+
         public string Name { get; }
         public double SalePrice { get; }
     }
@@ -24,6 +25,7 @@ namespace Chapter5.Exercises.Exerc5_03
         public static Task<double> Average(IEnumerable<ISalesLoader> loaders)
         {
             var loaderTasks = loaders.Select(ldr => Task.Run(ldr.FetchSales));
+
             return Task
                 .WhenAll(loaderTasks)
                 .ContinueWith(tasks =>
@@ -41,6 +43,7 @@ namespace Chapter5.Exercises.Exerc5_03
     {
         private readonly Random _random;
         private readonly string _name;
+
         public SalesLoader(int id, Random rand)
         {
             _name = $"Loader#{id}";
@@ -50,8 +53,7 @@ namespace Chapter5.Exercises.Exerc5_03
         public IEnumerable<CarSale> FetchSales()
         {
             var delay = _random.Next(1, 3);
-            Logger.Log($"FetchSales {_name} sleeping for {delay} seconds...");
-
+            Logger.Log($"FetchSales {_name} sleeping for {delay} seconds ...");
             Thread.Sleep(TimeSpan.FromSeconds(delay));
 
             var sales = Enumerable
@@ -59,10 +61,9 @@ namespace Chapter5.Exercises.Exerc5_03
                 .Select(n => GetRandomCar())
                 .ToList();
 
-            sales.ForEach(car => logg)
-
             foreach (var car in sales)
                 Logger.Log($"FetchSales {_name} found: {car.Name} @ {car.SalePrice:N0}");
+
             return sales;
         }
 
@@ -71,21 +72,21 @@ namespace Chapter5.Exercises.Exerc5_03
         {
             var nameIndex = _random.Next(_carNames.Length);
             return new CarSale(
-            _carNames[nameIndex], _random.NextDouble() * 1000);
+                _carNames[nameIndex], _random.NextDouble() * 1000);
         }
     }
-    
-    class Program
+
+    public class Program
     {
         public static void Main()
         {
             var random = new Random();
-            const int MaxSalesHub = 10;
+            const int MaxSalesHubs = 10;
 
             string input;
             do
             {
-                Console.WriteLine("Max wait time (in seconds): ");
+                Console.WriteLine("Max wait time (in seconds):");
                 input = Console.ReadLine();
 
                 if (string.IsNullOrEmpty(input))
@@ -98,8 +99,7 @@ namespace Chapter5.Exercises.Exerc5_03
                         .ToList();
 
                     var averageTask = SalesAggregator.Average(loaders);
-                    var hasCompleted = averageTask.Wait(
-                    TimeSpan.FromSeconds(maxDelay));
+                    var hasCompleted = averageTask.Wait(TimeSpan.FromSeconds(maxDelay));
                     var average = averageTask.Result;
 
                     if (hasCompleted)
@@ -111,6 +111,7 @@ namespace Chapter5.Exercises.Exerc5_03
                         Logger.Log("Timeout!");
                     }
                 }
+
             } while (input != string.Empty);
         }
     }
