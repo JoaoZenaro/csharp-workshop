@@ -5,7 +5,9 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<StartupObject>Chapter5.Examples.TaskExamples</StartupObject>
+	<!--<StartupObject>Chapter5.Examples.TaskExamples</StartupObject>-->
+	  
+	<StartupObject>Chapter5.Exercises.Exerc5_01.Program</StartupObject>
   </PropertyGroup>
 
 </Project>
