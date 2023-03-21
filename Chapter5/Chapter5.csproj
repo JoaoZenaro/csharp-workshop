@@ -11,12 +11,14 @@
 	<!--<StartupObject>Chapter5.Examples.AsyncUsersExamples</StartupObject>-->
 	<!--<StartupObject>Chapter5.Examples.AsyncLambdaExamples</StartupObject>-->
 	<!--<StartupObject>Chapter5.Examples.ErrorExamples</StartupObject>-->
+	<!--<StartupObject>Chapter5.Examples.WhenAllErrorExamples</StartupObject>-->
+	<StartupObject>Chapter5.Examples.AsyncEnumerableExamplesProgram</StartupObject>
 	  
 	<!--<StartupObject>Chapter5.Exercises.Exerc5_01.Program</StartupObject>-->
 	<!--<StartupObject>Chapter5.Exercises.Exerc5_02.Program</StartupObject>-->
 	<!--<StartupObject>Chapter5.Exercises.Exerc5_03.Program</StartupObject>-->
 	<!--<StartupObject>Chapter5.Exercises.Exerc5_04.Program</StartupObject>-->
-	<StartupObject>Chapter5.Exercises.Exerc5_05.Program</StartupObject>
+	<!--<StartupObject>Chapter5.Exercises.Exerc5_05.Program</StartupObject>-->
   </PropertyGroup>
 
 </Project>
